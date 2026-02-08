@@ -43,7 +43,7 @@ async def trabajo(interaction: discord.Interaction, tipo: str, evidencia: str):
     await interaction.response.send_message("Tu trabajo está siendo validado por el Alto Mando.", ephemeral=True)
 
     # Mensaje al canal de trabajos (cambia el ID)
-    canal_trabajos = bot.get_channel(123456789012345678)
+    canal_trabajos = bot.get_channel(1469812518791807140)
     if canal_trabajos is None:
         print("No se encontró el canal de trabajos")
         return
@@ -107,5 +107,6 @@ async def descender(interaction: discord.Interaction, usuario: discord.Member, p
 
 # --- EJECUTAR BOT ---
 bot.run(TOKEN)
+
 
 
